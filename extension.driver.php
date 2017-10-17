@@ -2,20 +2,6 @@
 
 class extension_importcsv extends Extension
 {
-    // About this extension:
-    public function about()
-    {
-        return array(
-            'name' => 'Import/export CSV',
-            'version' => '0.3',
-            'release-date' => '2011-12-15',
-            'author' => array(
-                'name' => 'Twisted Interactive',
-                'website' => 'http://www.twisted.nl'),
-            'description' => 'Import a CSV file to create new entries for a certain section, or export an existing section to a CSV file'
-        );
-    }
-
     public function fetchNavigation()
     {
         // Author: Use the accessor function if available (Symphony 2.5)
