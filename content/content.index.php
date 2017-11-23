@@ -155,7 +155,7 @@ class contentExtensionImportcsvIndex extends AdministrationPage
         $this->__addVar('section-id', $sectionID);
         $this->__addVar('unique-action', $uniqueAction);
         $this->__addVar('unique-field', $uniqueField);
-        $this->__addVar('import-url', URL . '/symphony/extension/importcsv/');
+        $this->__addVar('import-url', SYMPHONY_URL  . '/extension/importcsv/');
 
         // Output the CSV-data:
         $csvData = $csv->data;
