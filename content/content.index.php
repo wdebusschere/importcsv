@@ -453,7 +453,7 @@ class contentExtensionImportcsvIndex extends AdministrationPage
     private function __getLanguages()
     {
         // Get the available languages:
-        $supported_language_codes = explode(',', General::sanitize(Symphony::Configuration()->get('language_codes', 'language_redirect')));
+       $supported_language_codes = explode(',', General::sanitize(Symphony::Configuration()->get('langs', 'frontend_localisation')));
         $supported_language_codes = array_map('trim', $supported_language_codes);
         $supported_language_codes = array_filter($supported_language_codes);
 
